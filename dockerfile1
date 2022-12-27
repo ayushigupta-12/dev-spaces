@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-COPY https://github.com/ayushigupta-12/dev-spaces/spring-boot-2.6.9.jar
+COPY https://github.com/ayushigupta-12/dev-spaces/spring-boot-2.6.9.jar spring-boot-2.6.9.jar
 
 EXPOSE 8080
 
