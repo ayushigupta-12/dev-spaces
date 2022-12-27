@@ -1,7 +1,6 @@
 FROM openjdk:11
 VOLUME /tmp
 EXPOSE 8080
-ARG JAR_FILE=target/spring-boot-2.6.9.jar
-ADD ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY spring-boot-2.6.9.jar spring-boot-2.6.9.jar
+ENTRYPOINT ["java","-jar","/spring-boot-2.6.9.jar"]
 
